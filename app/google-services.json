@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "599629696424",
+    "firebase_url": "https://mymlproject-1483972339233.firebaseio.com",
+    "project_id": "mymlproject-1483972339233",
+    "storage_bucket": "mymlproject-1483972339233.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:599629696424:android:edd32d37732ce144",
+        "android_client_info": {
+          "package_name": "com.example.talarir.mymlproject"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "599629696424-ro86c7dscdc1006mr1earse88bi38mro.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.talarir.mymlproject",
+            "certificate_hash": "51FA64090B6186E06C5D7115E3E69F100E591C24"
+          }
+        },
+        {
+          "client_id": "599629696424-8uoghbr767mq93k3mdgkfmkr03o3fojq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCwOBhN1A-SDZ97iw182zNnKFwa3yisr2w"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "599629696424-8uoghbr767mq93k3mdgkfmkr03o3fojq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
