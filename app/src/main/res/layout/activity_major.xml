@@ -26,12 +26,18 @@
             android:text="@string/start_updates" />
 
         <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/dare"
+            android:onClick="triggerMainEvent"/>
+
+        <Button
             android:id="@+id/stop_updates_button"
             android:layout_width="0dp"
             android:layout_weight="1"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="@dimen/small_margin"
-            android:layout_marginStart="@dimen/small_margin"
+            android:layout_marginLeft="1dp"
+            android:layout_marginStart="1dp"
             android:enabled="false"
             android:gravity="center"
             android:onClick="stopUpdatesButtonHandler"
@@ -45,24 +51,24 @@
             android:id="@+id/latitude_text"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="@dimen/small_margin"
-            android:layout_marginStart="@dimen/small_margin"
+            android:layout_marginLeft="1dp"
+            android:layout_marginStart="1dp"
             android:textSize="@dimen/default_text_size" />
 
         <TextView
             android:id="@+id/longitude_text"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="@dimen/small_margin"
-            android:layout_marginStart="@dimen/small_margin"
+            android:layout_marginLeft="1dp"
+            android:layout_marginStart="1dp"
             android:textSize="@dimen/default_text_size" />
 
         <TextView
             android:id="@+id/last_update_time_text"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="@dimen/small_margin"
-            android:layout_marginStart="@dimen/small_margin"
+            android:layout_marginLeft="1dp"
+            android:layout_marginStart="1dp"
             android:textSize="@dimen/default_text_size" />
     </LinearLayout>
 

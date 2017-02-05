@@ -1,6 +1,7 @@
 package com.example.talarir.mymlproject;
 
 import android.content.Context;
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.pm.PackageManager;
 import android.location.Location;
@@ -9,6 +10,8 @@ import android.support.annotation.Nullable;
 import android.support.v4.app.ActivityCompat;
 import android.support.v7.app.AppCompatActivity;
 
+import com.example.talarir.mymlproject.TheProject.CoordinatorActivity;
+import com.example.talarir.mymlproject.TheProject.ParcelableMajor;
 import com.google.android.gms.common.ConnectionResult;
 import com.google.android.gms.common.api.GoogleApiClient;
 import com.google.android.gms.location.LocationListener;
@@ -17,6 +20,8 @@ import com.google.android.gms.location.LocationServices;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.MapFragment;
 import com.google.android.gms.maps.OnMapReadyCallback;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 
 import android.os.Bundle;
 import android.util.Log;
@@ -103,6 +108,15 @@ public class MajorActivity extends AppCompatActivity implements
 
         setUpMap();
 
+    }
+
+    public void triggerMainEvent(View view)
+    {
+        Toast.makeText(this,"Let's ROLL!",Toast.LENGTH_SHORT).show();
+        ParcelableMajor parcelableMajor=new ParcelableMajor(String.valueOf(mCurrentLocation.getLatitude()),String.valueOf(mCurrentLocation.getLongitude()));
+        Intent triggerMainEventIntent= new Intent(this, CoordinatorActivity.class);
+        triggerMainEventIntent.putExtra("currentLocation",parcelableMajor);
+        startActivity(triggerMainEventIntent);
     }
 
     private void setUpMap() {
@@ -277,6 +291,7 @@ public class MajorActivity extends AppCompatActivity implements
         mGoogleApiClient.disconnect();
 
         super.onStop();
+
     }
 
 
