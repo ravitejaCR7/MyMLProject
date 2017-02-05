@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_signup"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.talarir.mymlproject.SignupActivity">
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="enter email"
+        android:ems="10"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:id="@+id/emailEtSp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:hint="password!"
+        android:layout_below="@+id/emailEtSp"
+        android:layout_alignEnd="@+id/emailEtSp"
+        android:layout_marginTop="35dp"
+        android:id="@+id/passwordEtSp" />
+
+    <Button
+        android:text="Sing Up"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/passwordEtSp"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="103dp"
+        android:id="@+id/signUpBtnSp" />
+
+    <Button
+        android:text="@string/login"
+        android:textColor="#D32F2F"
+        android:layout_width="wrap_content"
+        android:background="@null"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/signUpBtnSp"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/loginBtnUp" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_gravity="center|bottom"
+        android:layout_marginBottom="20dp"
+        android:visibility="gone" />
+</RelativeLayout>

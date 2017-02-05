@@ -13,6 +13,7 @@ import com.google.firebase.database.FirebaseDatabase;
 public class CoordinatorActivity extends AppCompatActivity {
 
     FirebaseDatabase database = FirebaseDatabase.getInstance();
+    private DatabaseReference mDatabase;
     Intent fromMojorActivityIntent;
 
     public Location mCurrentLocation;

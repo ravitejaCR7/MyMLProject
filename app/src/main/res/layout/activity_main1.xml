@@ -13,12 +13,30 @@
         android:ems="10"
         android:id="@+id/loginET" />
 
+    <EditText
+        android:hint="password!"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/passwordEt" />
+
     <Button
         android:layout_margin="10dp"
         android:text="login"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/loginBtn" />
+
+
+    <Button
+        android:layout_marginTop="90dp"
+        android:text="@string/signUp"
+        android:background="@null"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/signupBtn"
+        android:elevation="10dp" />
 
     <ProgressBar
         android:id="@+id/progressBar"

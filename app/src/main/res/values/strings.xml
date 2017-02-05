@@ -19,4 +19,9 @@
     <string name="location_updated_message">Location updated</string>
     <string name="dare">*click*</string>
 
+    <string name="signUp"><i><b><u>signUp?</u></b></i></string>
+    <string name="login"><i><b><u>registered already?</u></b></i></string>
+    <string name="minimum_password">Password too short, enter minimum 6 characters!</string>
+    <string name="auth_failed">Authentication failed, check your email and password or sign up</string>
+
 </resources>
