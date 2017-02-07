@@ -18,6 +18,7 @@
     <string name="stop_updates">Stop updates</string>
     <string name="location_updated_message">Location updated</string>
     <string name="dare">*click*</string>
+    <string name="retrieve">R</string>
 
     <string name="signUp"><i><b><u>signUp?</u></b></i></string>
     <string name="login"><i><b><u>registered already?</u></b></i></string>

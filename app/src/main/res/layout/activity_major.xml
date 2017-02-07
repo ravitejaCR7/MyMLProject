@@ -30,6 +30,11 @@
             android:layout_height="wrap_content"
             android:text="@string/dare"
             android:onClick="triggerMainEvent"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/retrieve"
+            android:onClick="triggerRetrieveMainEvent"/>
 
         <Button
             android:id="@+id/stop_updates_button"

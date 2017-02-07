@@ -11,6 +11,7 @@ import android.support.v4.app.ActivityCompat;
 import android.support.v7.app.AppCompatActivity;
 
 import com.example.talarir.mymlproject.TheProject.CoordinatorActivity;
+import com.example.talarir.mymlproject.TheProject.CoordinatorRetrieveActivity;
 import com.example.talarir.mymlproject.TheProject.ParcelableMajor;
 import com.google.android.gms.common.ConnectionResult;
 import com.google.android.gms.common.api.GoogleApiClient;
@@ -112,11 +113,18 @@ public class MajorActivity extends AppCompatActivity implements
 
     public void triggerMainEvent(View view)
     {
-        Toast.makeText(this,"Let's ROLL!",Toast.LENGTH_SHORT).show();
+        Toast.makeText(this,"Let's SAVE!",Toast.LENGTH_SHORT).show();
         ParcelableMajor parcelableMajor=new ParcelableMajor(String.valueOf(mCurrentLocation.getLatitude()),String.valueOf(mCurrentLocation.getLongitude()));
         Intent triggerMainEventIntent= new Intent(this, CoordinatorActivity.class);
         triggerMainEventIntent.putExtra("currentLocation",parcelableMajor);
         startActivity(triggerMainEventIntent);
+    }
+
+    public void triggerRetrieveMainEvent(View view)
+    {
+        Toast.makeText(this,"Let's RETRIEVE!",Toast.LENGTH_SHORT).show();
+        Intent triggerRetrieveMainEventIntent= new Intent(this, CoordinatorRetrieveActivity.class);
+        startActivity(triggerRetrieveMainEventIntent);
     }
 
     private void setUpMap() {
