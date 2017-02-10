@@ -77,8 +77,8 @@ public class CoordinatorActivity extends AppCompatActivity {
         mFirebaseDatabase = mFirebaseInstance.getReference("users");
         mFirebaseDatabase.child(user.getUid()).child("email").setValue(user.getEmail());
 
-        mFirebaseDatabase.child(user.getUid()).child("LatandLon").child("latitude").setValue(parcelableMajor.latitude);
-        mFirebaseDatabase.child(user.getUid()).child("LatandLon").child("longitude").setValue(parcelableMajor.longitude);
+        mFirebaseDatabase.child(user.getUid()).child("latitude").setValue(parcelableMajor.latitude);
+        mFirebaseDatabase.child(user.getUid()).child("longitude").setValue(parcelableMajor.longitude);
     }
 
     @Override
